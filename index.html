@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bendera</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .bendera {
+            width: 300px;
+            height: 200px;
+            position: relative;
+            border: 1px solid #000;
+        }
+        .jalur-merah {
+            background-color: #D5003A;
+            height: 50px;
+            position: absolute;
+            left: 0;
+            right: 0;
+        }
+        .jalur-merah.atas {
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #FFFFFF;
+        }
+        .jalur-merah.bawah {
+            bottom: 0;
+        }
+        .jalur-biru {
+            background-color: #0038A8;
+            height: 100px;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            right: 0;
+        }
+        .lingkaran-putih {
+            background-color: #FFFFFF;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+        .lingkaran-putih span {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="bendera">
+        <div class="jalur-merah atas">
+            <span>The Flag</span>
+        </div>
+        <div class="jalur-biru"></div>
+        <div class="lingkaran-putih">
+            <span>of</span>
+            <span>Laos</span>
+        </div>
+        <div class="jalur-merah bawah"></div>
+    </div>
+</body>
+</html>
